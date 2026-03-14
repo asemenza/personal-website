@@ -43,6 +43,7 @@ img {
 .home-page {
     background: #050505;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .home-page::before {
@@ -104,6 +105,7 @@ img {
     align-items: baseline;
     gap: 2rem;
     flex-shrink: 0;
+    padding-right: 7rem;
     font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
     font-size: 0.95rem;
     line-height: 1;
@@ -168,8 +170,8 @@ img {
 .menu-panel {
     position: absolute;
     top: calc(100% + 0.8rem);
-    right: 0;
-    min-width: 18rem;
+    left: 0;
+    white-space: nowrap;
     display: none;
     padding: 0;
     border: 0;
@@ -351,12 +353,12 @@ img {
         display: flex;
         gap: 1rem;
         flex-wrap: wrap;
+        padding-right: 0;
     }
 
     .menu-panel {
         left: 0;
         right: auto;
-        min-width: min(18rem, calc(100vw - 2rem));
     }
 
     .gallery-image {
